@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5dcf57deafeff30b1cac5746
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Oppss",
+    "subscribedToChannel": "Developer"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5dcf57deafeff30b1cac5746
+
+###
+
+PATCH http://localhost:3000/subscribers/5dcf57deafeff30b1cac5746
+Content-Type: application/json
+
+{
+    "name": "Updating user",
+    "subscribedToChannel": "Dev"
+}
